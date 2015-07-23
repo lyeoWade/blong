@@ -1,0 +1,382 @@
+/* LESS Document */
+/* LESS Document */
+@charset "uff-8";
+/* bg----; */
+/*过渡  */
+.transition {
+  -webkit-transition: ease-in 0.5s all;
+  -moz-transition: ease-in 0.5s all;
+  -ms-transition: ease-in 0.5s all;
+  -o-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+.h2 {
+  line-height: 40px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #8a7c5b;
+  color: #ffffc4;
+}
+.after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+body {
+  background: #262626 !important;
+}
+/* 参数 */
+.h30 {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+}
+/* 导航条 */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111;
+  z-index: 99999;
+}
+header .nav-main {
+  width: 1000px;
+  margin: 0 auto;
+}
+header .nav-main ul {
+  text-align: center;
+  font-size: 0;
+}
+header .nav-main ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+header .nav-main ul li a {
+  color: #f2f2f2;
+  padding: 20px;
+  display: block;
+  text-transform: capitalize;
+  -webkit-transition: ease-in 0.5s all;
+  -moz-transition: ease-in 0.5s all;
+  -ms-transition: ease-in 0.5s all;
+  -o-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+header .nav-main ul li a:hover {
+  background: #373737;
+  color: #bfbfbf;
+}
+/*    content----------------   */
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #fff;
+  /* 左边内容区 */
+
+  /* 右边栏目  标签、列表 、广告 */
+
+}
+.content .content-right {
+  width: 70%;
+  margin-right: 3%;
+  /* 列表 */
+
+}
+.content .content-right .warp_c .imagesbox {
+  width: 140px;
+}
+.content .content-right .warp_c .imagesbox img {
+  width: 140px;
+}
+.content .content-right .content-list {
+  padding: 20px;
+  background: #191919;
+  color: #dcdc9e;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px dashed #dcdc9e;
+  margin-bottom: 20px;
+}
+.content .content-right .content-list h2 {
+  line-height: 40px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #8a7c5b;
+  color: #ffffc4;
+}
+.content .content-right .content-list h2 a {
+  font-size: 20px;
+  color: #ffffc4;
+  -webkit-transition: ease-in 0.5s all;
+  -moz-transition: ease-in 0.5s all;
+  -ms-transition: ease-in 0.5s all;
+  -o-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+.content .content-right .content-list h2 a:hover {
+  color: #8a7c5b;
+}
+.content .content-right .content-list .descripion {
+  width: 490px;
+  margin-left: 20px;
+}
+.content .content-right .content-list .descripion .des {
+  line-height: 24px;
+  text-indent: 2em;
+}
+.content .content-right .content-list .descripion .des-more {
+  margin-top: 15px;
+  text-align: right;
+}
+.content .content-right .content-list .descripion .des-more a {
+  color: #ffffc4;
+  -webkit-transition: ease-in 0.5s all;
+  -moz-transition: ease-in 0.5s all;
+  -ms-transition: ease-in 0.5s all;
+  -o-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  font-size: 12px;
+}
+.content .content-right .content-list .descripion .des-more a:hover {
+  color: #8a7c5b;
+}
+.content .content-right .page {
+  width: 100%;
+}
+.content .content-right .page .page-list {
+  text-align: center;
+  font-size: 0;
+  background: #191919;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.content .content-right .page .page-list a {
+  font-size: 14px;
+  color: #ffffc4;
+  display: inline-block;
+  padding: 18px 22px;
+  font-family: Georgia;
+  -webkit-transition: ease-in 0.5s all;
+  -moz-transition: ease-in 0.5s all;
+  -ms-transition: ease-in 0.5s all;
+  -o-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+.content .content-right .page .page-list a:hover {
+  color: #bfbfbf;
+  background: #262626;
+}
+.content aside {
+  width: 27%;
+}
+.content aside .new-articl {
+  padding: 20px 10px;
+  background: #191919;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-bottom: 20px;
+}
+.content aside .new-articl h2 {
+  line-height: 40px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #8a7c5b;
+  color: #ffffc4;
+}
+.content aside .new-articl .arc-list li {
+  line-height: 30px;
+}
+.content aside .new-articl .arc-list li a {
+  position: relative;
+  padding-left: 20px;
+  color: #ffffc4;
+  font-size: 12px;
+  -webkit-transition: ease-in 0.5s all;
+  -moz-transition: ease-in 0.5s all;
+  -ms-transition: ease-in 0.5s all;
+  -o-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+.content aside .new-articl .arc-list li a:after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -3px;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #ccc;
+}
+.content aside .new-articl .arc-list li a:hover {
+  color: #bfbfbf;
+}
+.content aside .new-articl .tag-cloud {
+  font-size: 0;
+}
+.content aside .new-articl .tag-cloud a {
+  font-size: 12px;
+  padding: 6px 12px;
+  border: 1px solid #CCC;
+  display: inline-block;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  margin: 5px;
+  color: #ffffc4;
+  -webkit-transition: ease-in 0.5s all;
+  -moz-transition: ease-in 0.5s all;
+  -ms-transition: ease-in 0.5s all;
+  -o-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+.content aside .new-articl .tag-cloud a:hover {
+  background: #262626;
+}
+/* 登陆框 */
+.login_box {
+  width: 100%;
+  background: #111;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.login_box .login_warp {
+  padding-top: 25px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.login_box .login_warp .com_style {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding-left: 10px;
+}
+.login_box #user_btn {
+  width: 60px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+/* 内容页 */
+.content-box-warp h2 {
+  line-height: 40px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #8a7c5b;
+  color: #ffffc4;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.content-box-warp .content_descripion {
+  padding: 20px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.content-box-warp .content_descripion p {
+  text-indent: 2em;
+  margin: 10px 0;
+  background: none !important;
+  color: #fff !important;
+}
+.content-box-warp .content_descripion img {
+  width: 700px;
+  display: block;
+  margin-bottom: 20px;
+}
+.reg-box {
+  width: 1000px;
+  height: auto;
+  background: #262626;
+  margin: 0 auto;
+}
+.reg-box .reg-warp {
+  width: 60%;
+  background: #111;
+  border: 1px dashed #8a7c5b;
+  padding: 40px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  /* 注册区域 */
+
+}
+.reg-box .reg-warp .reg-tit {
+  line-height: 40px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #8a7c5b;
+  line-height: 50px;
+  color: #ffffc4;
+}
+.reg-box .reg-warp .reg-par {
+  color: #ffffc4;
+}
+.reg-box .reg-warp .reg-par ul {
+  padding-top: 20px;
+}
+.reg-box .reg-warp .reg-par li .inputC {
+  height: 30px;
+  width: 350px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 14px;
+  padding-left: 8px;
+  margin-bottom: 20px;
+}
+.reg-box .reg-warp .reg-par li span {
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
+}
+.reg-box .reg-warp .reg-par li span.error {
+  color: #f00;
+}
+.reg-box .reg-warp .reg-par li span.success {
+  color: green;
+}
+.reg-box .reg-warp .reg-par li span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  content: "*";
+  color: #f00;
+  width: 6px;
+  height: 6px;
+  left: -10px;
+  top: 0;
+}
+.reg-box .reg-warp .reg-par .regBtn {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding-top: 30px;
+}
+.reg-box .reg-warp .reg-par .regBtn a {
+  background: #262626;
+  padding: 10px 50px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #ffffc4;
+  -webkit-transition: ease-in 0.5s all;
+  -moz-transition: ease-in 0.5s all;
+  -ms-transition: ease-in 0.5s all;
+  -o-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+}
+.reg-box .reg-warp .reg-par .regBtn a:hover {
+  color: #bfbfbf;
+}

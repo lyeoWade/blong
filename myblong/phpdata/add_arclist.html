@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="../js/jquery.min.js"></script>
+<style>
+*{ margin:0; padding:0; }
+input{ border:0; }
+#text{ width:300px; height:30px; border-radius:4px; border:1px solid #ccc; padding-left:8px; }
+#btn{ width:80px; height:26px; border-radius:4px; background:#069; color:#fff; }
+#area{border-radius:4px; border:1px solid #ccc; padding:8px;}
+.taginput{ border:1px solid #ccc; height:24px; padding-left:8px; }
+</style>
+</head>
+
+<body>
+<!-- 加载编辑器的容器 -->
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="ue/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="ue/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+	var ue = UE.getEditor('container');
+</script>
+<div style="width:900px; margin:80px auto;">
+
+<form enctype="multipart/form-data" action="add_arclist.php" method="POST">
+
+
+	<input type="text" name="title" id="text" placeholder="标题" /><br/><br/><br/>
+	<textarea id="area" name="desc" cols="60" rows="4"></textarea><br/><br/><br/>
+	<script id="container" name="content" type="text/plain">
+	
+	</script><br/><br/><br/><br/>
+	<div style="margin:20px 0;">
+		<label for="html">html</label><input type="radio" name="radio" value="1" id="html" />
+		<label for="css">css</label><input type="radio" name="radio" value="2" id="css" />
+		<label for="js">js</label><input type="radio" name="radio" value="3" id="js" />
+		<label for="svg">svg</label><input type="radio" name="radio" value="4" id="svg" />
+		<label for="fl">福利</label><input type="radio" name="radio" value="5" id="fl" />
+	</div>
+	<div style="height:50px; margin:20px 0;">
+		关键字:<input type="text" name="tag" class="taginput" value="" />(限一个)；
+	</div>
+	<input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+	上传缩略图<input type="file" name="filename" /><br/><br/><br/><br/><br/>
+	<input type="submit" id="btn" value="发布" />
+</form>
+</div>
+<script>
+
+/*
+$(function(){
+	$('#btn').on("click",function(){
+		$.ajax({
+			type:"POST",
+			url:"add_arclist.php",
+			//data:"title="+$("#text").val()+"&desc="+$("#area").val(),
+			success:function(data){
+				var str=$.parseJSON(data)// 只支持标准的json格式 必须双引号 单引号都不行
+				//var str=eval('('+data+')');
+				
+				if(str.error==1){
+					alert(str.des);	
+					window.location.href='';
+				}else{
+					alert(str.des);
+					window.location.href='';
+				}
+				//alert(data);	
+			}
+		});	
+	 //  $.post("add_arclist.php", { title: $("#text").val(), desc: $("#area").val() },function(data){alert("Data Loaded: " + data);});
+	});	
+});
+*/
+
+</script>
+</body>
+</html>

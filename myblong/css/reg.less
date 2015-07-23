@@ -1,0 +1,86 @@
+/* LESS Document */
+
+
+@import "index.less";
+
+
+.reg-box{
+	width:@comwidth;
+	height:auto;
+	background:@bgcolor;
+	margin:@auto;
+	
+	.reg-warp{
+		width:60%;
+		background:#111;
+		border:1px dashed @bgcolor+#645635;
+		padding:40px;
+		.border-radius (5px);
+		.reg-tit{
+			.h2;
+			line-height:50px;
+			color:@acolor;	
+		}
+		/* 注册区域 */
+		.reg-par{
+			
+			color:@acolor;
+			
+			ul{
+				padding-top:20px;
+			}
+			
+			li{
+			  
+			  .inputC{
+				height:30px;
+				width:350px;
+			   .border-radius (3px);
+			   font-size:14px;
+			   padding-left:8px;
+			   margin-bottom:20px;
+			  }	
+			  span{
+				display:inline-block;
+				margin-left:25px;
+				position:relative;
+				&.error{
+					color:#f00;	
+				}
+				&.success{
+					color:green;	
+				}
+				&:after{
+					.after;
+					content:"*";
+					color:#f00;
+					width:6px;
+					height:6px;
+					left:-10px;
+					top:0;	
+				}  
+			  }
+			}
+			
+			.regBtn{
+				height:50px;
+				line-height:50px;
+				text-align:center;
+				padding-top:30px;
+				a{
+					background:@bgcolor;
+					padding:10px 50px;	
+					.border-radius(3px);
+					color:@acolor;
+					.transition;
+					&:hover{
+						color:@ahc;	
+					}
+				}	
+			}
+			
+		}
+	}
+}
+
+
